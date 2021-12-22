@@ -1,0 +1,42 @@
+<!DOCTYPE HTML><html><head><meta charset="UTF-8">
+    <title>As Simple As It Gets CSS Popup Image Demo 2</title>
+    <style type="text/css">
+    /* ------------- CSS Popup Image ------------- */
+    #thumbwrap {
+    width:252px;
+    height:252px;
+    }
+    .thumb {
+    float:left; /* must be floated for same cross browser position of larger image */
+    position:relative;
+    margin:3px;
+    }
+    .thumb img {
+    border:1px solid #000;
+    vertical-align:bottom;
+    }
+    .thumb:hover {
+    border:0; /* IE6 needs this to show large image */
+    z-index:1;
+    }
+    .thumb span {
+    position:absolute;
+    visibility:hidden;
+    }
+    .thumb:hover span {
+    visibility:visible;
+    top:-280px;
+    left:2px;
+    }
+    </style> 
+    </head>
+    
+    <body>
+<br />
+<br /><br /><br /><br />
+    <div id="thumbwrap">
+    <a class="thumb" href="#">asdasdasd<span><img src="sedal.png" alt=""></span></a>
+  </div>
+    
+    </body>
+    </html>
